@@ -1,0 +1,14 @@
+,0
+0,cust_tenure
+1,prod_total_balance
+2,in_person_visit_cnt
+3,avg_cash_5m
+4,txn_cash_in_avg_5m
+5,prod_asset_balance
+6,avg_wire_12m
+7,txn_cash_in_val_5m
+8,tot_cash_val_5m
+9,prod_primary_crc_cnt
+10,txn_cash_out_avg_5m
+11,prod_primary_cda_cnt
+12,prod_prim_acct_cnt
