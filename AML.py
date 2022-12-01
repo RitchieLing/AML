@@ -71,12 +71,21 @@ y_pred = forest.predict(X_test[selected_features])
 sns.heatmap(df[selected_features].corr())
 print(y_pred)
 
+
+
+y_train = y_train.replace(0,"False")
+y_train = y_train.replace(1,"True")
+y_test = y_test.replace(0,"False")
+y_test = y_test.replace(1,"True")
+
+
 df_train = X_train
 df_train["rating"] = y_train
 
 df_test = X_test
 df_test["rating"] = y_test
 
+h2o.init()
 # convert pandas DataFrame into H2O Frame
 train_h2o = h2o.H2OFrame(df_train)
 # Describe  the train h20Frame
